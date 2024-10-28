@@ -1,0 +1,29 @@
+/* class selector */
+
+.text{
+    background-color: aqua; color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* tag selector */
+h1{
+    font-size: 50px; text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+
+/* id selector */
+}
+#paragraph{
+    text-align: center;
+    font-weight: 600;
+}
+
+/* universal selector */
+*{
+    background-color: antiquewhite;
+}
+div{
+    
+    width: 500px;
+    height: 350px;
+    border: 1px solid
+}
