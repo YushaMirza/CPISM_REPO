@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:darkolivegreen;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 8vw 1fr;
+    height: 10vh;
+}
+
+.logo{
+    background-color: darkseagreen;
+}
+
+nav{
+    background-color:rgba(82, 173, 82, 0.871);
+}
+
+main{
+    width: 100%;
+    height: 45vh;
+    background-color:darkslateblue;
+}
+
+.parent {
+    display: grid;
+    height: 30vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 100px;
+    background-color: #e60000;
+    padding: 40px;
+}
+
+
+.child {
+    background-color:rgba(255, 149, 0, 0.579);
+    border: 1px solid;
+}
+ footer{
+    height: 10vh;
+ }
