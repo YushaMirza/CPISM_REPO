@@ -1,0 +1,22 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+    
+.a{
+    background-color: aqua;
+    position: sticky;
+}
+.b{
+    background-color: chocolate;
+    
+}
+.c{
+    background-color: gold;
+}
+.d{
+    background-color: salmon;
+
+}
