@@ -1,132 +1,3 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-main{
-    width: 100%;
-    height: 460px;
-    justify-items: center;
-    background-color: #f5f5f5;
-}
-
-.main_and_section_container{
-    height: inherit;
-    width: 65%;
-}
-
-nav{
-    display: flex;
-    column-gap: 40px;
-}
-
-h2{
-    padding: 30px 0 30px 0;
-    color: rgb(91, 90, 90);
-}
-
-h3{
-    padding: 0 0 20px 0;
-    font-weight: normal;
-    color: rgb(83, 81, 81);
-}
-
-.cars_icon{
-    height: 60px;
-    width: 70px;
-}
-
-p{
-    margin-top: 5px;
-    color: rgb(49, 49, 49);
-}
-
-.cars{
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
-    justify-items: center;
-    align-items: center;
-}
-
-.car_boxes {
-    height: 120px;
-    width: 150px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    border-radius: 12px;
-
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.car_boxes:hover {
-    transform: translateY(-5px);
-    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-section{
-    width: 100%;
-    height: 720px;
-    justify-items: center;
-}
-
-.offerings{
-    height: 70vh;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 17px;
-    justify-items: center;
-    align-items: center;
-}
-
-.offering_boxes{
-    display: flex;
-    height: 100px;
-    width: 485px;
-    border: 1px solid rgb(215, 213, 213) ;
-    align-items: center;
-    padding: 15px;
-    transition:box-shadow 0.3s;
-}
-
-.offerings_icon{
-    height: 58px;
-    width: 120px;
-}
-
-#offering_icon{
-    height: 88px;
-    width: 120px;
-}
-
-.offering_info{
-    padding-left: 20px;
-}
-
-.offering_info strong{
-    color: rgb(21, 44, 114);
-    font-weight: normal;
-    font-size: 15px;
-}
-
-.offering_boxes:hover{
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-/* .offering-boxes:hover strong {
-    color: rgb(34, 73, 189);
-} */
-
-
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -135,8 +6,7 @@ section{
 
 main {
     width: 100%;
-    height: 70vh;
-    /* Use viewport height for responsiveness */
+    height: 460px;
     justify-items: center;
     background-color: #f5f5f5;
 }
@@ -144,166 +14,214 @@ main {
 .main_and_section_container {
     height: inherit;
     width: 65%;
-    /* Use percentage for width */
     margin: 0 auto;
-    /* Center the container */
 }
 
-nav {
+.main_nav {
     display: flex;
-    column-gap: 3vw;
-    /* Use viewport width for spacing */
+    column-gap: 40px;
+}
+
+hr {
+    border: 0.1px solid rgba(0, 0, 0, 0.126);
 }
 
 h2 {
-    padding: 5vh 0 3vh 0;
-    /* Use viewport height for padding */
+    font-size: 24px;
     color: rgb(91, 90, 90);
-    font-size: 1.5rem;
-    /* Use rem for font size */
+}
+
+main h2 {
+    padding: 30px 0 30px 0;
+}
+
+main h3 {
+    padding: 0 0 20px 0;
 }
 
 h3 {
-    padding: 0 0 2vh 0;
-    /* Use viewport height for padding */
     font-weight: normal;
     color: rgb(83, 81, 81);
-    font-size: 1.2rem;
-    /* Use rem for font size */
 }
 
 .cars_icon {
-    height: 7vh;
-    /* Use viewport height */
-    width: 4.5vw;
-    /* Use viewport width */
+    height: 50px;
+    width: 70px;
 }
 
-.car_boxes,.offering_info p {
-    margin-top: 1.5vh;
-    /* Use viewport height */
-    color: rgb(82, 81, 81);
+p {
+    margin-top: 5px;
+    color: rgb(49, 49, 49);
 }
 
 .cars {
-    margin-top: 3vh;
-    /* Use viewport height */
+    margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    /* Responsive grid */
-    grid-template-rows: repeat(auto-fill, minmax(130px, 1fr));
-    /* Responsive grid */
-    gap: 2.5vh 2.5vw;
-    /* Use viewport width for gap */
-    justify-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
     align-items: center;
 }
 
 .car_boxes {
-    height: 17vh;
-    width: 10vw;
+    height: 120px;
+    width: 155px;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.115);
-    border-radius: .5rem;
-    /* Use rem for border radius */
+    border-radius: 12px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.167);
     transition: box-shadow 0.3s;
 }
 
 .car_boxes:hover {
-    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.318);
-    /* Use rem for box-shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.car_boxes:hover p {
+    color: rgba(0, 0, 0, 0.679);
+    /* Change the text color to black on hover */
+    font-weight: 550;
+}
+
+.pagination-dots {
+    position: relative;
+    left: 425px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.dot {
+    height: 6px;
+    width: 5.7px;
+    margin: 0 5px;
+    border: 1px solid rgba(0, 0, 0, 0.367);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: rgb(81, 142, 203);
 }
 
 section {
-    height: 200vh;
+    height: 450vh;
 }
 
 .pakwheel_offering_section {
     width: 100%;
-    height: 95vh;
-    /* Use viewport height */
+    height: 650px;
     justify-items: center;
 }
 
+.pakwheel_offering_section h2 {
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
 .offerings {
-    height: 80vh;
+    height: 70vh;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    /* Responsive grid */
-    grid-template-rows: repeat(4, 1fr);
-    /* Responsive grid */
-    gap: 10px;
-    /* Use viewport width for gap */
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
     justify-items: center;
     align-items: center;
 }
 
 .offering_boxes {
+    padding-left: 15px;
     display: flex;
-    height: 6vh;
-    /* Use viewport height */
-    width: 27vw;
-    /* Use viewport width */
+    height: 110px;
+    width: 480px;
     border: 1px solid rgb(215, 213, 213);
     align-items: center;
-    padding: 2vw;
-    /* Use viewport width for padding */
     transition: box-shadow 0.3s;
 }
 
 .offerings_icon {
-    height: 9vh;
-    /* Use viewport height */
-    width: 8vw;
-    /* Use viewport width */
+    height: 65px;
+    width: 120px;
 }
 
 #offering_icon {
-    height: 13vh;
-    /* Use viewport height */
-    width: 8vw;
-    /* Use viewport width */
+    height: 88px;
+    width: 120px;
 }
 
 .offering_info {
-    padding-left: 2vw;
-    /* Use viewport width */
+    padding-left: 20px;
 }
 
-strong {
-    color: rgb(21, 52, 143);
-    font-weight: bold;
-    font-size: 1rem;
-    /* Use rem for font size */
+.offering_info strong {
+    color: rgb(30, 64, 163);
+    font-size: 15px;
 }
 
 .offering_boxes:hover {
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.137);
-    /* Use rem for box-shadow */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.managed_by_pakwheel_section, .featured_used_car_for_sale_section{
+.offering_boxes:hover strong {
+    color: rgb(78, 116, 230);
+}
+
+.managed_by_pakwheel_section,
+.featured_used_car_for_sale_section {
     width: 100%;
-    height: 55vh;
+    height: 405px;
     /* Use viewport height */
     justify-items: center;
 }
 
-.featured_new_cars_section{
+.featured_used_car_for_sale_section header, .featured_new_cars_section, header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 20px 0;
+}
+
+.managed_by_pakwheel_section header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 20px 0;
+}
+
+.featured_new_cars_section {
     width: 100%;
-    height: 60vh;
-    /* Use viewport height */
+    height: 430px;
     justify-items: center;
 }
-.mbps_color, .fnc_color{
+
+.fnc_nav {
+    padding-top: 10px;
+    display: flex;
+    column-gap: 40px;
+}
+
+.featured_new_cars_section hr {
+    margin: 10px 0 20px 0;
+}
+
+.view_all {
+    cursor: pointer;
+    color: rgb(110, 160, 211);
+    text-decoration: none;
+}
+
+.view_all:hover {
+    text-decoration: underline;
+}
+
+.mbps_color,
+.fnc_color {
     background-color: #f5f5f5;
 }
 
-.managed_by_pakwheels, .featured_used_car_for_sale, .featured_new_cars {
+.managed_by_pakwheels,
+.featured_used_car_for_sale,
+.featured_new_cars {
     display: flex;
     gap: 10px;
     /* Use viewport width for gap */
@@ -311,19 +229,25 @@ strong {
     align-items: center;
 }
 
-.mbp_boxes, .fucfs_boxes, .fnc_boxes {
+.mbp_boxes,
+.fucfs_boxes,
+.fnc_boxes {
     display: flex;
     flex-direction: column;
-    height: 37vh;
-    /* Use viewport height */
-    width: 15vw;
-    /* Use viewport width */
+    height: 260px;
+    width: 230px;
     background-color: white;
     transition: box-shadow 0.3s;
     border: 1px solid rgba(0, 0, 0, 0.097);
 }
 
-.mbp_info, .fucfs_info{
+#fnc_box_size {
+    height: 280px;
+    width: 230px;
+}
+
+.mbp_info,
+.fucfs_info {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -340,33 +264,60 @@ strong {
     padding-top: 2vh;
 }
 
-.mbp_info, .fucfs_info, .fnc_info p{
+.mbp_info,
+.fucfs_info,
+.fnc_info p {
     font-size: 0.9rem;
 }
 
-.mbp_info_price, .fucfs_info_price, .fnc_info_price {
-    color: rgb(66, 209, 66);
+.mbp_info,
+.fucfs_info,
+.fnc_info, .car_logo_name strong {
+    color: rgb(65, 88, 141);
 }
 
-.mbp_info_city, .fucfs_info_city{
+.mbp_info_price,
+.fucfs_info_price,
+.fnc_info_price {
+    color: rgb(52, 180, 52);
+}
+
+.mbp_info_city,
+.fucfs_info_city {
     color: rgb(82, 81, 81);
 }
 
-.fnc_info_reviews{
-    margin-top: 10px;
-    color: rgb(82, 81, 81);
+.star_rating_reviews {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
 }
 
-.featured_badge{
+.fa-star {
+    font-size: 13px;
+}
+
+.checked {
+    color: orange;
+}
+
+.fnc_info_reviews {
+    padding-left: 5px;
+    color: rgba(82, 81, 81, 0.705);
+    margin: 0;
+}
+
+.featured_badge {
     position: absolute;
     justify-items: center;
-    align-content: center;
+    align-items: center;
     height: 25px;
     width: 80px;
     background-color: rgb(175, 22, 22);
 }
 
-.featured_badge p{
+.featured_badge p {
+    font-size: 12px;
     color: white;
 }
 
@@ -374,9 +325,55 @@ strong {
     box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.27)
 }
 
-.fucfs_boxes:hover{
+.fucfs_boxes:hover {
     box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.27)
 }
-.fnc_boxes:hover{
+
+.fnc_boxes:hover {
     box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.27)
+}
+
+.new_cars_by_make_section {
+    height: 150vh;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.new_cars_by_make_section h2 {
+    padding: 85px 0 15px 0;
+}
+
+.car_logos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.car_logos img{
+    height: 65px;
+    width: 65px;
+    margin-left: 3px;
+}
+
+.car_logo{
+    height: 70px;
+    width: 72px;
+    margin: 0 0 15px 0;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.097);
+}
+
+.car_logo_name{
+    height: 120px;
+    width: 140px;
+    align-content: center;
+    justify-items: center;
+}
+
+.car_logo_name:hover strong {
+    color: rgb(78, 116, 230);
 }
