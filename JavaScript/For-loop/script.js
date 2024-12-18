@@ -17,7 +17,7 @@ if(table_number && table_length){
 
         for(let initial=1;initial<=table_length;initial++){
 
-            let rowColor = initial % 2 === 0 ? "even" : "odd"
+            let rowColor = initial % 2 === 0 ? "even" : "odd";
 
             x+=`<tr class="${rowColor}">
                         <td>${table_number}</td>
