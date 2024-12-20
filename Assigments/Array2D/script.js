@@ -16,20 +16,15 @@ let students = [
     ["15", "Amal Aamir", "ADSE", "+925678909876", "amal@gmail.com"]
 ];
 
-let tableBody = document.querySelector("#studentTable tbody");
+let data = "";
 
-for (let i = 0; i < students.length; i++) {
-
-    let row = document.createElement("tr");
-    let rowColor = i % 2 === 0 ? "even" : "odd";
-
-    row.classList.add(rowColor);
-
-    for (let j = 0; j < students[i].length; j++) {
-        let cell = document.createElement("td");
-        cell.innerText = students[i][j];
-        row.appendChild(cell);
+for( let i = 0; i < students.length; i++){
+    let rowColor = i % 2 == 0 ? "even" : "odd";
+    data += `<tr class = "${rowColor}">`;
+    for( let j = 0; j < students[i].length; j++){
+        data += `<td>${students[i][j]}</td>`;
     }
-
-    tableBody.appendChild(row);
+    `</tr>`
 }
+
+document.querySelector("#studentTable tbody").innerHTML = data;
