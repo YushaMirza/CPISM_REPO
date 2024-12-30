@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Odd Function</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <style>
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center mt-5 mb-5">Range Between 1 - 50</h2>
+
+        <label for="range1" class="form-label">Select Between 1 to 50</label>
+        <input type="range" class="form-range mb-3" min="1" max="50" step="1" id="range1" value="1"
+            oninput="displayValue(this.value, 'rangeValue1')">
+        <p class="text-center mb-5">Selected Value: <span id="rangeValue1">1</span></p>
+
+        <label for="range2" class="form-label">Select Between 1 to 50</label>
+        <input type="range" class="form-range mb-3" min="1" max="50" step="1" id="range2" value="1"
+            oninput="displayValue(this.value, 'rangeValue2')">
+        <p class="text-center">Selected Value: <span id="rangeValue2">1 </span></p>
+
+        <button class="btn btn-primary mt-5" onclick="checkEvenOdd()"><span class="fst-italic">Submit</span></button>
+        <div class="result mt-5" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
