@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students [
+    <!ELEMENT students (student+)>
+    <!ELEMENT student (id,name,(department|batch))>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT department (#PCDATA)>
+    <!ELEMENT batch (#PCDATA)>
+
+    <!ATTLIST batch class CDATA #IMPLIED >
+]>
+
+<students>
+
+    <student>
+        <id>101</id>
+        <name>yusha</name>
+        <batch class = "ai">CPISM</batch>
+    </student>
+
+    <student>
+        <id>102</id>
+<name>basit</name>
+<department>CPISM</department>
+    </student>
+
+</students>
