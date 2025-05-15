@@ -7,11 +7,9 @@ A responsive and modern landing page design for a fictional Daraz e-commerce pro
 - HTML5  
 - CSS3  
 - JavaScript  
-- Bootstrap
 
 ## ✨ Features
-
-- Fully responsive landing page design  
+ 
 - Product cards with images, pricing, and descriptions  
 - Form section with validation for newsletter or contact  
 - Clean layout optimized for conversions and user engagement
@@ -19,7 +17,7 @@ A responsive and modern landing page design for a fictional Daraz e-commerce pro
 ## 📁 How to Run
 
 1. Clone the repository  
-2. Open `index.html` in your browser  
+2. Open `index.html` in VS Code / OR any Code Editor
 *(No server setup required — static frontend project)*
 
 ## 📬 Contact
