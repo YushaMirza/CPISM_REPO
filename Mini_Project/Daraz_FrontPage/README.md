@@ -25,6 +25,7 @@ A responsive and modern landing page design for a fictional Daraz e-commerce pro
 **Yousha Mirza**  
 📧 yousha.mirza328@gmail.com  
 🔗 [LinkedIn](https://linkedin.com/in/yousha-mirza-5886a5281)
+🔗 [Portfolio](https://yushamirza.zya.me)
 
 ---
 
